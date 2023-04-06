@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="x[8] <= 0.5\nentropy = 1.224\nsamples = 18\nvalue = [2, 12, 4]\nclass = prescript", fillcolor="#8ef0b7"] ;
+1 [label="x[5] <= 0.5\nentropy = 1.53\nsamples = 9\nvalue = [2, 3, 4]\nclass = astigmatic", fillcolor="#eadefb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="x[3] <= 0.5\nentropy = 1.0\nsamples = 4\nvalue = [2, 2, 0]\nclass = age", fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 2\nvalue = [2, 0, 0]\nclass = age", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]\nclass = prescript", fillcolor="#39e581"] ;
+2 -> 4 ;
+5 [label="x[4] <= 0.5\nentropy = 0.722\nsamples = 5\nvalue = [0, 1, 4]\nclass = astigmatic", fillcolor="#a06aec"] ;
+1 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 3]\nclass = astigmatic", fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label="x[1] <= 0.5\nentropy = 1.0\nsamples = 2\nvalue = [0, 1, 1]\nclass = prescript", fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = astigmatic", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = prescript", fillcolor="#39e581"] ;
+7 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 9\nvalue = [0, 9, 0]\nclass = prescript", fillcolor="#39e581"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
